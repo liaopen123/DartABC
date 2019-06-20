@@ -10,6 +10,10 @@ main() {
 
   Person person = new  Person();
   person.getUserInfo();
+
+  person..getUserInfo()
+        ..toString()
+        ..printContent1("content");
 }
 
 void forloop() {

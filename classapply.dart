@@ -1,4 +1,5 @@
 class Person{
+  static String TAG = "Person";
 String _name;
 int _age;
 
@@ -10,7 +11,12 @@ Person.now(){
 Person():_age=20,_name="廖鹏辉"{
 
 }
-
+static void printContent(content){
+  print(content);
+}
+ void printContent1(content){
+  print(content);
+}
 //私有属性或者 私有方法的定义:在属性  方法前面加_
 void _setAge(int age){
   print(age);
