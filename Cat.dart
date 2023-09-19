@@ -1,6 +1,11 @@
 import 'petAnimal.dart';
 
-class Cat extends petAnimal{
+main(List<String> args) {
+  var cat = Cat.initCat();
+}
+
+class Cat extends petAnimal {
+  String catName;
   @override
   void bake() {
     print("miemiemie");
@@ -11,4 +16,7 @@ class Cat extends petAnimal{
     print("一蹦一跳");
   }
 
+  Cat.initCat() : this.catName = "先初始化初始化列表的函数" {
+    print(catName);
+  }
 }
